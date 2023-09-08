@@ -1,2 +1,5 @@
 (library
- (name chompy))
+ (name chompy)
+ (libraries lwt cohttp-lwt-unix)
+ (preprocess (pps lwt_ppx))
+ )
